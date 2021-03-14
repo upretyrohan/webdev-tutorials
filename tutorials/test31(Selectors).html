@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+</head>
+<style>
+  h1{
+      background-color: red;
+      color: black;
+      text-align: center;
+      font-weight: bold;
+  } 
+  /* if p is contained by any li which is contained by div */
+  /* div li p{
+      color:red;
+  }  */
+  
+  /* div direct child */
+   /* if p is right inside div then this CSS will be applied */
+  /* div> p{        
+      color:red;
+  }  */
+
+ /* element whose last sibling is div */
+  /* if p is right after div i.e p is the next sibling of div*/ */
+  div+p{
+      color:green;
+  }
+</style>
+<body>
+   <h1>this is more on selectors</h1> 
+   <div class = "container">
+       <div class = "row">
+           <ul>
+               <p> this is one more</p>
+               <li class= "item"><p>this is parainsiede li</p></li>
+           </ul>
+           <p> This is a paragraph</p>
+       </div>
+       <p> this is another para</p>
+   </div>
+   <p> this is outermost para</p>
+</body>
+</html>

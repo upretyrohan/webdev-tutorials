@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Gym</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px;
+        padding: 0px;
+        background-image: url('img/back.jpg');
+        height: 900px;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 20px;
+        left: 34px;
+
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 2px solid red; */
+        width: 39%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        position: absolute;
+        top: 20px;
+        right: 34px;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        /* Remove underlines from links */
+        text-decoration: none;
+        color: white;
+        padding: 20px 20px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color:grey;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        background-color: black;
+        padding: 10px 10px;
+        margin: 0px 10px;
+        /* border: 2px solid red; */
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: grey;
+    }
+
+    .container {
+        /* border: 2px solid green; */
+        margin: 122px  45px;
+        padding:39px 53px;
+        width:33%;
+        cursor:pointer;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+    display: block;
+    width: 83%;
+    padding: 7px 8px;
+    margin: 12px auto;
+    /* border: 2px solid #4a00ff; */
+    font-size: 14px;
+    font-family: 'Baloo Bhai', cursive;
+    border-radius: 14px;
+    }
+
+    .container button{
+        font-family: 'Baloo Bhai', cursive;
+        font-size: 14px;
+        display: block;
+        margin:20px auto;
+        width:70px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Rohan Fitness</div>
+        </div>
+        <!-- right box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call me now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Lucknow now</h1>
+        <form action ="noaction.php">
+         <div class = "form-group">
+             <input type="text" name="" placeholder="enter your name">
+         </div>   
+         <div class = "form-group">
+             <input type="number" name="" placeholder="enter your age">
+         </div>   
+         <div class = "form-group">
+             <input type="text" name="" placeholder="enter your gender">
+         </div> 
+         <div class = "form-group">
+            <input type="text" name="" placeholder="enter your locality">
+        </div> 
+             <button class="button">Submit</button> 
+        </form>
+    </div>
+</body>
+</html>

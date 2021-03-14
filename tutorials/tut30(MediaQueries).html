@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+    .box{
+        font-size: 14px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        display: none;
+    }
+    @media(max-width: 300px)
+    {
+        #box1{
+            display: block;
+            color:black;
+            background-color: pink;
+        }
+    }
+    @media(min-width: 301px) and (max-width:500px)
+    {
+        #box2{
+            display: block;
+            color:red;
+            background-color:orange;
+        }
+    }
+    @media(min-width:501px)
+    {
+        #box1{
+            display: block;
+            color:white;
+            background-color: rgb(128, 27, 44);
+        }
+    }
+</style>
+<body>
+    <div class="box" id="box1">Mein ek iphone hoon</div>
+    <div class="box" id="box2">Mein ek tablet hoon</div>
+    <div class="box" id="box3">Mein ek android hoon</div>
+</body>
+</html>
