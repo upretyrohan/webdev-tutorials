@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Time Interval | Set Timeour</title>
+</head>
+<body>
+    <div class="contianer">
+        <span id="t"></span>
+    </div>
+    <script>
+        console.log("This is tuorial 58");
+        function greet(name) {
+            console.log("Hello Good Morning " + name);
+        } 
+        // setTimeout(greet("Harry"), 5000); 
+        //timeOut = setTimeout(greet, 5000, "Harry");
+        //clearTimeout(timeOut);
+
+        //intervalID = setInterval(greet, 1000, "Harry");
+        //clearInterval(intervalID);
+        function displaytime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('t').innerHTML = time;
+        }
+
+        setInterval(displaytime, 1000);
+    </script>
+</body>
+</html>
